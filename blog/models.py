@@ -13,3 +13,4 @@ class Post(models.Model):
     content = models.TextField() # The blog article content
     created_on = models.DateTimeField(auto_now_add=True) # The timestamp
     status = models.IntegerField(choices=STATUS, default=0) # Status of the blog post - status is constant as defined - 0 = draft - 1 = published
+    excerpt = models.TextField(blank=True)
